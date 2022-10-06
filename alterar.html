@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oteca</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">Oteca</a>
+            <div class="itens-menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="consultar.html" class="menu-item">Pesquisar</a>
+                <a href="cadastrar.html" class="menu-item">Cadastrar</a>
+                <a href="alterar.html" class="menu-item">Alterar</a>
+                <a href="deletar.html" class="menu-item">Deletar</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-dois">
+            <div class="texto-explicativo">
+                <h4 class="tituloForm">Alteração</h4>
+                <p>Digite o ID do livro que você <br> deseja  alterar e digite as <br> novas informações.</p>
+            </div>
+            <div class="form" id="form-alterar">
+                <form action="alterar.php" method="post">
+                    <label for="fid">ID: </label><br>
+                    <input type="text" name="fid" id="fid" class="input"><br><br>
+                    <label for="ftitulo">Novo titulo </label><br>
+                    <input type="text" name="ftitulo" id="ftitulo" class="input"><br><br>
+                    <label for="fescritor">Novo escritor </label><br>
+                    <input type="text" name="fescritor" id="fescritor" class="input"><br><br>
+                    <label for="feditora">Nova editora </label><br>
+                    <input type="text" name="feditora" id="feditora" class="input"><br><br>
+                    <input type="submit" name="Alterar" value="Alterar" class="btn" id="btn-alterar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
