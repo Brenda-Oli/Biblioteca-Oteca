@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oteca</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">Oteca</a>
+            <div class="itens-menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="consultar.html" class="menu-item">Pesquisar</a>
+                <a href="cadastrar.html" class="menu-item">Cadastrar</a>
+                <a href="alterar.html" class="menu-item">Alterar</a>
+                <a href="deletar.html" class="menu-item">Deletar</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-dois">
+                <form action="deletar.php" method="post">
+                    <label for="fid">Digite o ID que deseja apagar</label><br><br>
+                    <input type="text" name="fid" id="fid" class="input"><br><br>
+                    <input type="submit" name="Apagar" value="Apagar" class="btn" id="btn-apagarDeletar">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
