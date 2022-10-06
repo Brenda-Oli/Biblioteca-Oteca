@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Oteca</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html" class="logo">Oteca</a>
+            <div class="itens-menu">
+                <a href="index.html" class="menu-item">Início</a>
+                <a href="consultar.html" class="menu-item">Pesquisar</a>
+                <a href="cadastrar.html" class="menu-item">Cadastrar</a>
+                <a href="alterar.html" class="menu-item">Alterar</a>
+                <a href="deletar.html" class="menu-item">Deletar</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-pesquisar">
+                <div class="form-dois">
+                    <h4 class="tituloForm">Pesquisa por titulo</h4>
+                    <form action="consultar.php" method="post">
+                        <label for="ftitulo">Titulo </label><br>
+                        <input type="text" name="ftitulo" id="ftitulo" class="input"><br><br>
+                        <input type="submit" name="pesquisar" value="Pesquisar" class="btn" id="btn-pesquisar">
+                    </form>
+                </div>
+                <div class="form-dois">
+                    <h4 class="tituloForm">Pesquisa Geral</h4><br>
+                    <form action="consultaGeral.php" method="post">
+                        <input type="submit" value="Pesquisar" name="pesquisar" class="btn">
+                </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
